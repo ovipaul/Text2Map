@@ -1,0 +1,44 @@
+# Text2Map Configuration File
+
+text_processing:
+  remove_rt: true
+  remove_handles: true
+  remove_emojis: true
+  remove_links: true
+  normalize_spaces: true
+
+ner:
+  model_path: "data/models/bert_ner"
+  confidence_threshold: 0.7
+  batch_size: 32
+  max_length: 512
+
+geocoding:
+  service: "nominatim"
+  user_agent: "text2map-geocoder"
+  timeout: 10
+  retry_count: 3
+  rate_limit: 1.0
+
+visualization:
+  map_style: "open-street-map"
+  image_size: [1080, 720]
+  image_scale: 4
+  animation_duration: 2000
+  zoom_level: 4
+  radius: 5
+  padding: 1.2
+
+data:
+  boundaries:
+    countries: "data/boundaries/countries/"
+    states: "data/boundaries/states/"
+    counties: "data/boundaries/counties/"
+    cities: "data/boundaries/cities/"
+  
+  models:
+    bert_ner: "data/models/bert_ner/"
+  
+output:
+  base_dir: "data/processed/"
+  frames_dir: "frames/"
