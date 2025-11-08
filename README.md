@@ -213,18 +213,7 @@ pip install -e ".[dev]"
 
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
 
-## Citation
 
-If you use Text2Map in your research, please cite:
-
-```bibtex
-@software{text2map2024,
-  title={Text2Map: Geospatial Analysis from Social Media Text},
-  author={Research Team},
-  year={2024},
-  url={https://github.com/yourusername/Text2Map}
-}
-```
 
 ## Acknowledgments
 
